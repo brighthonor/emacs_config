@@ -1,0 +1,128 @@
+cd .ssh
+mkdir .ssh
+ls
+cd .ssh
+ssh-keygen -t rsa -C "EMAIL_ADDRESS" -b 4096
+ls
+find-file id_rsa.pub
+ls
+alias l 'ls -al'
+l
+l
+alias ff 'for i in ${eshell-flatten-list $*} {find-file $i}'
+ls
+cd .sssh
+cd .ssh
+ls
+ff id_rsa.pub
+ls
+cd Desktop/
+l
+cd aca
+l
+cd 42/SFV
+l
+git clone ssh://git@gl.kinetc.net:7001/<student_id>_sf2401_assignment/sf-assignment-0
+git clone ssh://git@gl.kinetc.net:7001/2018-18321_sf2401_assignment/sf-assignment-0
+git clone ssh://git@gl.kinetc.net:7001/2018-18321_sf2401_assignment/sf-assignment-1
+l
+cd sf-assignment-0
+l
+cd src
+l
+ff P01.v 
+l
+make
+make
+l
+l
+l
+make
+make clean
+opam switch list
+eval $(opam env)
+l
+ff P01.
+ls
+ls
+l
+l
+ls
+ls -al
+cd ..
+exit
+l
+cd Desktop/
+l
+cd work
+ls
+(+ 1 2)
+l
+ff .DS_Store 
+ls
+l
+cd ..
+l
+l
+cd plan
+l
+cd aca
+l
+cd 42
+l
+cd MA
+l
+c ..
+ls
+cd ..
+l
+cd ~
+l
+cd .emacs.d/
+l
+ff custom.el 
+ls
+cd ..
+ls
+cd Desktop/
+l
+touch cod.org
+ls
+ff cod.org
+l
+cd CA
+l
+ff cod.org 
+ls
+rm cod.org~
+ls
+mv cod.org cod2.org
+ls
+l
+ls
+ff cod1.org 
+l
+touch cod3.org
+ff cod3.org 
+l
+touch cod4.org
+l
+ff cod4.org
+l
+cd ../aca/42/SFV/lf/
+l
+make
+l
+touch cod5.org
+ff cod5.org
+l
+g++ -v
+g++ -version
+g++ --version
+gcc --version
+make --version
+opam version
+opam --version
+eval $(opam env)
+opam env
+eval $(opam env)

@@ -1,0 +1,1 @@
+("~/Desktop/aca/42/SFV/assignment/sf-assignment-2/" "~/Desktop/aca/42/SFV/assignment/sf-assignment-1/" "~/Desktop/aca/42/SFV/check/sf-assignment-1/" "~/Desktop/aca/42/SFV/assignment/sf-assignment-0/" "~/Desktop/aca/42/SFV/lf/")
