@@ -19,6 +19,12 @@
 ;; tab width
 (setq-default tab-width 4)
 
+;; max-eval-depth
+(setq max-lisp-eval-depth 10000)
+
+;; windows move keybinding
+(windmove-default-keybindings)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Configuration files
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

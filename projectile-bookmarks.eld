@@ -1,1 +1,1 @@
-("~/Desktop/aca/42/SFV/assignment/sf-assignment-2/" "~/Desktop/aca/42/SFV/assignment/sf-assignment-1/" "~/Desktop/aca/42/SFV/check/sf-assignment-1/" "~/Desktop/aca/42/SFV/assignment/sf-assignment-0/" "~/Desktop/aca/42/SFV/lf/")
+("~/Desktop/coq/" "~/Desktop/coq/sf202301/" "~/.emacs.d/" "~/Desktop/aca/42/SFV/assignment/sf-assignment-2/" "~/Desktop/aca/42/SFV/lf/" "~/Desktop/aca/42/SFV/assignment/sf-assignment-1/" "~/Desktop/aca/42/SFV/check/sf-assignment-1/" "~/Desktop/aca/42/SFV/assignment/sf-assignment-0/")
