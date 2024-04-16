@@ -1,128 +1,128 @@
-l
-coq_makefile -f _CoqProject -o CoqMakefile
-/bin/zsh
-ff _CoqProject 
-l
-/bin/zsh
-l
-ff _CoqProject 
-ls
-mkdir theories
-ls
-mv coq.v theories/
-l
-ff CoqMakefile
-l
-rm CoqMakefile
-rm CoqMakefile.conf 
-ff Makefile
-l
+make qemu
 make
-/bin/zsh
-l
-ff _CoqProject 
-l
+make qemu
 make
-cd theories/
-l
-ff coq.v
-l
-cd ..
-ls
-mmake
-/bin/axh
-/bin/zsh
-ff _CoqProject 
-l
-mv theories/coq.v .Makefile.coq.d 
-mv .Makefile.coq.d coq.v
-l
-rm -rf theories/
-l
+make qemu
 make
-/bin/zsh
-ff coq.v
-cd ..
-l
-mkdir os
-cd os
-l
-git clone https://github.com/snu-csl/xv6-riscv-snu
-l
-cd xv6-riscv-snu/
-git checkout pa3
-git pull origin pa3
-l
+make qemu
 make
-/bin/zsh
-ff Makefile 
-l
+make qemu
 make
-/bin/zsh
-l
-ff Makefile 
-l
+make qemu
 make
-/bin/zsh
-l
 make
-/bin/zsh
-l
+make qemu
 make
-/bin/zsh
 make qemu
 l
-cd kernel/
+cd .emacs.d
+l
+git init
+git status
+mv .gitigonre .gitignore
+l
+git add .
+git commit -m "fix gitignore"
+git config --global user.name "brighthonor"
+git config --global user.email "shyi0211@gmail.com"
+git commit --amend --reset-author
+git commit -m --amend --reset-author
+git commit --amend --reset-author
+git commit -m "fix ignore"
+git add .
+git commit -m "fix ignore"
+git push origin main
+ls
+ls
+cd ..
+l
+cd Desktop/
+l
+cd work
+l
+cd baekstep/
 l
 ff .
 l
-ff proc.c
+cd src
+l
+mkdir images
+sudo /bin/zsh
+l
+ㅣ
+ls
 cd ..
 ls
-make
-make
-make
-make
-make
-make
-make qemu
-make
-make
-make qemu
-make
-make qemu
-make
-make qemu
-make
-make
-make qemu
-make
-make qemu
-make
-make qemu
-make
-make
-make
-make qemu
-make
-make
-make qemu
-make
-make qemu
-make
-make qemu
-make
-make qemu
-make
-make qemu
-make
-make qemu
-make
-make qemu
-make
-make qemu
-make
-make
-make qemu
-make
-make qemu
+yarn start
+l
+cd src
+l
+ff .
+l
+cd pages
+ls
+cd ..
+l
+ff App.js
+ls
+cd Desktop/
+l
+cd work
+l
+cd baekstep/
+l
+cd src
+l
+mkdir pages
+mkdir components
+mkdir images
+l
+cd pages
+l
+cd ..
+l
+ff App.
+ff App.js
+ls
+cd ..
+l
+yarn start
+ls
+cd src
+l
+yarn start
+ls
+cd ..
+ls
+yarn add react-router-dom
+ls
+cd pl
+l
+mkdir hw1
+ls
+cd hw1
+l
+cd ../..
+l
+cd aca/42/AL/
+l
+ff exam.org 
+ls
+cd ../../..
+ls
+cd ..
+l
+cd .emacs.d/
+l
+cd elpa
+l
+rm -rf evil-20240324.1731/
+rm -rf haskell-mode-20240116.1718/
+rm -rf dash-20240103.1301/
+rm -rf goto-chg-20220107.1733/
+rm -rf projectile-20240212.1100/
+rm -rf spacemacs-theme-20230530.1751/
+rm -rf yasnippet-20240308.815/
+cd ..
+ls
+rm -rf elpa

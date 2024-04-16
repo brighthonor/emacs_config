@@ -17,7 +17,7 @@
 (global-display-line-numbers-mode 1)
 
 ;; tab width
-(setq-default tab-width 4)
+(setq-default tab-width 2)
 
 ;; max-eval-depth
 (setq max-lisp-eval-depth 10000)
