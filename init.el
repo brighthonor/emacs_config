@@ -23,7 +23,15 @@
 (setq max-lisp-eval-depth 10000)
 
 ;; windows move keybinding
-(windmove-default-keybindings)
+;; (windmove-default-keybindings)
+;; windows move keybinding
+(global-set-key (kbd "C-s-h")  'windmove-left)
+(global-set-key (kbd "C-s-l") 'windmove-right)
+(global-set-key (kbd "C-s-k")    'windmove-up)
+(global-set-key (kbd "C-s-j")  'windmove-down)
+
+;; scroll-bar mode
+(scroll-bar-mode 0)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Configuration files
@@ -37,9 +45,25 @@
 (setq package-file "~/.emacs.d/package.el")
 (load package-file)
 
+;; path file
+(setq path-file "~/.emacs.d/path.el")
+(load path-file)
+
+;; theme file
+(setq theme-file "~/.emacs.d/theme.el")
+(load theme-file)
+
+;; org mode
+(setq orgconfig-file "~/.emacs.d/orgconfig.el")
+(load orgconfig-file)
+
+;; etc file (e.g., how to type ö?)
+(setq etcconfig-file "~/.emacs.d/etcconfig.el")
+(load etcconfig-file)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Font
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; default Latin font (e.g. Consolas)
-(set-face-attribute 'default nil :family "Source Code Pro for Powerline" :height 150)
+(set-face-attribute 'default nil :family "DejaVu Sans Mono" :height 140)

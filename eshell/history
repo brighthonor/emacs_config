@@ -1,128 +1,128 @@
-make qemu
-make
-make qemu
-make
-make qemu
-make
-make qemu
-make
-make qemu
-make
-make qemu
-make
-make
-make qemu
-make
-make qemu
+ff Makefile 
 l
-cd .emacs.d
-l
-git init
-git status
-mv .gitigonre .gitignore
-l
-git add .
-git commit -m "fix gitignore"
-git config --global user.name "brighthonor"
-git config --global user.email "shyi0211@gmail.com"
-git commit --amend --reset-author
-git commit -m --amend --reset-author
-git commit --amend --reset-author
-git commit -m "fix ignore"
-git add .
-git commit -m "fix ignore"
-git push origin main
-ls
-ls
-cd ..
-l
-cd Desktop/
-l
-cd work
-l
-cd baekstep/
-l
-ff .
-l
-cd src
-l
-mkdir images
-sudo /bin/zsh
-l
-ㅣ
-ls
-cd ..
-ls
-yarn start
-l
-cd src
-l
-ff .
-l
-cd pages
-ls
-cd ..
-l
-ff App.js
-ls
-cd Desktop/
-l
-cd work
-l
-cd baekstep/
-l
-cd src
-l
-mkdir pages
-mkdir components
-mkdir images
-l
-cd pages
+./configure 
 l
 cd ..
 l
-ff App.
-ff App.js
-ls
+cd compiler
+l
+ff Imp2Csharpminor.v 
 cd ..
 l
-yarn start
-ls
-cd src
+cd definition/
 l
-yarn start
-ls
-cd ..
-ls
-yarn add react-router-dom
-ls
-cd pl
-l
-mkdir hw1
-ls
-cd hw1
-l
-cd ../..
-l
-cd aca/42/AL/
-l
-ff exam.org 
-ls
-cd ../../..
-ls
+ff Imp.v
+ff ImpPrelude.v 
+ff ImpProofs.v 
+ff ImpNotations.v 
+ff ImpProofs.v
+ff ImpPrelude.v 
 cd ..
 l
-cd .emacs.d/
-l
-cd elpa
-l
-rm -rf evil-20240324.1731/
-rm -rf haskell-mode-20240116.1718/
-rm -rf dash-20240103.1301/
-rm -rf goto-chg-20220107.1733/
-rm -rf projectile-20240212.1100/
-rm -rf spacemacs-theme-20230530.1751/
-rm -rf yasnippet-20240308.815/
 cd ..
-ls
-rm -rf elpa
+l
+cd mem/l
+cd mem/
+l
+ff Mem0.v 
+ff Mem1.v 
+ff Mem01proof.v
+cd ..
+cd ..
+l
+git clone https://github.com/CCR-project/CCR.git
+l
+cd CCr
+l
+cd ..
+l
+cd CCR
+l
+cd ems
+cd ..
+make -j5 -k
+make clean
+ff ~/.emacs.d/package.el 
+l
+cd ems
+l
+cd ..
+l
+cd mem
+l
+cd ..
+l
+cd imp/l
+cd imp
+l
+cd definition/
+l
+ff ImpPrelude.v 
+cd ..
+l
+cd ..
+l
+cd ems
+l
+cd ..
+l
+cd mem
+l
+ff Mem0.v 
+ff MemOpen.v 
+cd ..
+l
+cd imp/l
+cd imp
+l
+cd definition/
+l
+ff ImpProofs.v 
+cd ..
+l
+cd definition/
+l
+cd ..
+l
+cd compiler_extract/
+l
+cd ..
+l
+cd ../mem/
+l
+ff Mem01proof.v 
+cd ..
+l
+grep -rn "Ltac ur"
+grep -rn "Ltac ur :="
+grep -rn "Ltac ur"
+grep -rn "Ltac ur"
+grep -rn "ur"
+l
+cd lib
+grep -rn "ur"
+l
+ff Red.v
+cd ..
+l
+cd ems/
+l
+ff IRed.v 
+cd ..
+l
+grep -rn --include "*.v" "ur"
+cd mem
+ff Mem1.v 
+ll
+cd ..
+l
+cd ..
+l
+cd vc
+l
+cd ..
+l
+cd vc
+l
+ff Preface.v
+ff Preface.v

@@ -1,7 +1,9 @@
 ;; package manager
 (require 'package)
+(add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/"))
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/"))
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+(add-to-list 'package-archives '("melpa-milkboxx" . "http://melpa.milkbox.net/packages/"))
 (add-to-list 'package-archives '("melpa-stable" . "http://stable.melpa.org/packages/"))
 (setq package-enable-at-startup nil)
 (package-initialize)
@@ -11,18 +13,17 @@
   (package-refresh-contents)
   (package-install 'use-package))
 
-;; TIMU-MACOS THEME
-(use-package timu-macos-theme
-  :ensure t
-  :config
-  (load-theme 'timu-macos t))
-
 ;; COMPANY-COQ
 (use-package proof-general :ensure t)
 (use-package company-coq :ensure t
   :config
   (add-hook 'coq-mode-hook #'company-coq-mode))
-(setq coq-prog-name "/Users/sang/.opam/default/bin/coqtop")
+;; (setq coq-prog-name "/Users/sang/.opam/refinement/bin/coqtop")
+;; (setq coq-prog-name "/Users/sang/.opam/ccr/bin/coqtop")
+;; (setq coq-prog-name "/Users/sang/.opam/default/bin/coqtop")
+;; (setq coq-prog-name "/Users/sang/.opam/iris-tutorial/bin/coqtop")
+(setq coq-prog-name "/Users/sang/.opam/xorlist/bin/coqtop")
+
 (global-set-key [?\s-l] 'maths-menu-insert-lambda)
 (global-set-key [?\s-l] 'maths-menu-insert-lambda)
 
@@ -40,6 +41,63 @@
 
 (global-set-key [?\s-3] 'proof-three-window-toggle)
 
-;; ORG-MODE
-(require 'org)
-(add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
+;; Tuareg for OCaml
+(use-package tuareg :ensure t)
+(add-to-list 'exec-path "/Users/sang/.opam/default/bin")
+
+;; AucTeX
+(use-package auctex :ensure t)
+(setq TeX-auto-save t)
+(setq TeX-parse-self t)
+(setq-default TeX-master nil)
+
+(use-package tex :ensure auctex)
+(add-to-list 'exec-path "/Library/TeX/texbin")
+
+;; anzu (search helper)
+(use-package anzu :ensure t
+	:config (global-anzu-mode +1))
+
+;; Haskell setting
+(use-package eglot
+	:ensure t
+	:config
+	(add-to-list 'eglot-server-programs 
+							 '(haskell-mode . ("haskell-language-server-wrapper" "--lsp"))))
+
+;; Install and configure company-mode
+(use-package company
+  :ensure t
+  :config
+  (add-hook 'after-init-hook 'global-company-mode))
+
+(use-package haskell-mode
+  :ensure t
+	:config
+	(custom-set-variables
+   '(haskell-process-suggest-remove-import-lines t)
+   '(haskell-process-auto-import-loaded-modules t)
+   '(haskell-process-log t)
+   '(haskell-process-type 'cabal-repl)
+	 '(haskell-stylish-on-save t))
+	(add-hook 'haskell-mode-hook #'hindent-mode)
+	(add-hook 'haskell-mode-hook #'eglot)
+  :bind (:map haskell-mode-map
+              (("C-c C-c" . haskell-compile)
+							 ("C-c C-z" . haskell-interactive-bring)
+               ("C-c C-l" . haskell-process-load-file)
+               ("C-c C-r" . haskell-process-reload)
+               ("C-c C-t" . haskell-process-do-type)
+               ("C-c C-i" . haskell-process-do-info))))
+
+(use-package exec-path-from-shell
+  :ensure t
+  :config
+  (exec-path-from-shell-initialize))
+
+
+;; markdown mode
+(use-package markdown-mode
+  :ensure t
+  :mode ("README\\.md\\'" . gfm-mode)
+  :init (setq markdown-command "multimarkdown"))
