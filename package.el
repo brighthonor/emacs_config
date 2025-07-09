@@ -18,6 +18,8 @@
 (use-package company-coq :ensure t
   :config
   (add-hook 'coq-mode-hook #'company-coq-mode))
+(setq cris "/home/sang/.opam/cris/bin/coqtop")
+(setq cm "/home/sang/.opam/cm/bin/coqtop")
 ;; (setq coq-prog-name "/Users/sang/.opam/refinement/bin/coqtop")
 ;; (setq coq-prog-name "/Users/sang/.opam/ccr/bin/coqtop")
 ;; (setq coq-prog-name "/Users/sang/.opam/default/bin/coqtop")
@@ -52,7 +54,10 @@
 (setq-default TeX-master nil)
 
 (use-package tex :ensure auctex)
+;; for macOS
 (add-to-list 'exec-path "/Library/TeX/texbin")
+;; for debian
+(add-to-list 'exec-path "/usr/bin/tex")
 
 ;; anzu (search helper)
 (use-package anzu :ensure t

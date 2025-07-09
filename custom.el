@@ -12,7 +12,7 @@
  '(haskell-stylish-on-save t)
  '(haskell-tags-on-save t)
  '(package-selected-packages
-	 '(markdown-mode leuven-theme leuven-dark leuver-dark leuver-theme monokai-theme monokai eglot exec-path-from-shell company-ghc olivetti poet-theme github-theme anzu auctex tuareg spacemacs-theme projectile company-coq proof-general haskell-mode evil)))
+	 '(timu-macos-theme markdown-mode leuven-theme leuven-dark leuver-dark leuver-theme monokai-theme monokai eglot exec-path-from-shell company-ghc olivetti poet-theme github-theme anzu auctex tuareg spacemacs-theme projectile company-coq proof-general haskell-mode evil)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

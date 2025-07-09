@@ -13,8 +13,4 @@
 (use-package leuven-theme
 	:ensure t)
 
-;; Github theme
-(use-package github-theme
-	:ensure t)
-
-(load-theme 'github t)
+(load-theme 'leuven t)

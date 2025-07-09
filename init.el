@@ -57,6 +57,10 @@
 (setq orgconfig-file "~/.emacs.d/orgconfig.el")
 (load orgconfig-file)
 
+;; auctex
+(setq auctex-file "~/.emacs.d/auctex.el")
+(load auctex-file)
+
 ;; etc file (e.g., how to type ö?)
 (setq etcconfig-file "~/.emacs.d/etcconfig.el")
 (load etcconfig-file)
@@ -66,4 +70,4 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; default Latin font (e.g. Consolas)
-(set-face-attribute 'default nil :family "DejaVu Sans Mono" :height 140)
+(set-face-attribute 'default nil :family "DejaVu Sans Mono" :height 100)

@@ -1,79 +1,3 @@
-ff Makefile 
-l
-./configure 
-l
-cd ..
-l
-cd compiler
-l
-ff Imp2Csharpminor.v 
-cd ..
-l
-cd definition/
-l
-ff Imp.v
-ff ImpPrelude.v 
-ff ImpProofs.v 
-ff ImpNotations.v 
-ff ImpProofs.v
-ff ImpPrelude.v 
-cd ..
-l
-cd ..
-l
-cd mem/l
-cd mem/
-l
-ff Mem0.v 
-ff Mem1.v 
-ff Mem01proof.v
-cd ..
-cd ..
-l
-git clone https://github.com/CCR-project/CCR.git
-l
-cd CCr
-l
-cd ..
-l
-cd CCR
-l
-cd ems
-cd ..
-make -j5 -k
-make clean
-ff ~/.emacs.d/package.el 
-l
-cd ems
-l
-cd ..
-l
-cd mem
-l
-cd ..
-l
-cd imp/l
-cd imp
-l
-cd definition/
-l
-ff ImpPrelude.v 
-cd ..
-l
-cd ..
-l
-cd ems
-l
-cd ..
-l
-cd mem
-l
-ff Mem0.v 
-ff MemOpen.v 
-cd ..
-l
-cd imp/l
-cd imp
 l
 cd definition/
 l
@@ -126,3 +50,79 @@ cd vc
 l
 ff Preface.v
 ff Preface.v
+ls
+cd .emacs.d/
+l
+ff theme.el 
+l
+cd .emacs.d/
+l
+ff init.el 
+l
+ls
+cd Desktop/
+l
+cd writing/
+l
+cd CRIS-dec
+cd CRIS-doc/
+l
+cd ..
+mkdir test
+l
+cd test
+l
+ff test.tex 
+l
+cd Desktop/writing/
+ls
+cd CRIS-doc/
+l
+ff paper.tex
+ff paper.tex
+ls
+git pull origin CRIS-doc
+git pull origin master
+git status
+rm #acmart.cls#
+l
+ff acmart.cls
+ls
+l
+rm -rf #acmart.cls#
+ls
+git status
+rm -rf "#acmart.cls#"
+ls
+l
+git status
+cd auto
+l
+ff paper.el 
+cd ..
+l
+ff .gitignore
+rm -rf auto/
+ls
+ff paper.aux 
+ff paper.tex
+ls
+cd .emacs.d/
+l
+ff etcconfig.el 
+ls
+cd Desktop/
+l
+cd writing/CRIS-doc/l
+cd writing/
+l
+cd CRIS-doc/
+l
+ff 4theories.tex 
+ls
+cd ../..
+l
+cd study/CRIS/CRIS-dev/
+ls
+ff .
+ls
