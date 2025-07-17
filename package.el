@@ -1,3 +1,9 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Whenever you encounter unknown error on installing useful packages,  ;;
+;; please try "M-x package-refresh-contents".                           ;;
+;; It may solve the problems                                            ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 ;; package manager
 (require 'package)
 (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/"))
@@ -18,13 +24,7 @@
 (use-package company-coq :ensure t
   :config
   (add-hook 'coq-mode-hook #'company-coq-mode))
-(setq cris "/home/sang/.opam/cris/bin/coqtop")
-(setq cm "/home/sang/.opam/cm/bin/coqtop")
-;; (setq coq-prog-name "/Users/sang/.opam/refinement/bin/coqtop")
-;; (setq coq-prog-name "/Users/sang/.opam/ccr/bin/coqtop")
-;; (setq coq-prog-name "/Users/sang/.opam/default/bin/coqtop")
-;; (setq coq-prog-name "/Users/sang/.opam/iris-tutorial/bin/coqtop")
-(setq coq-prog-name cris)
+(setq coq-prog-name "/Users/sang/.opam/cm/bin/coqtop")
 
 (global-set-key [?\s-l] 'maths-menu-insert-lambda)
 (global-set-key [?\s-l] 'maths-menu-insert-lambda)
@@ -122,3 +122,11 @@
 	(setq projectile-enable-caching t)
 	;; file-watching method (auto, native, etc.)
 	(setq projectile-indexing-method 'alien))
+
+;; magit
+(use-package magit
+  :ensure t
+  :commands (magit-status magit-get-current-branch)
+  :config
+  (setq magit-display-buffer-function #'magit-display-buffer-fullframe-status-v1)
+	(global-set-key (kbd "C-x g") 'magit-status))

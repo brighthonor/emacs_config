@@ -1,40 +1,95 @@
 l
-rm -rf #acmart.cls#
+ff 250715.org
 ls
-git status
-rm -rf "#acmart.cls#"
-ls
-l
-git status
-cd auto
-l
-ff paper.el 
 cd ..
 l
-ff .gitignore
-rm -rf auto/
-ls
-ff paper.aux 
-ff paper.tex
-ls
-cd .emacs.d/
+cd ..
 l
-ff etcconfig.el 
+cd study/
+l
+cd promising-vm/
+l
+cd src
+l
+ls
+cd ~/Desktop/
+l
+cd study/
+l
+cd CRIS
+l
+git pull origin merge-pmod-smod-sch
+make -j
+ff scheduler/SchIAproof.v
+ls
+ff scheduler/SchA.v 
+ff scheduler/SchI.v
+ls
+ff scheduler/SchA.v 
+ls
+ff SchA.v
+ls
+cd ..
+l
+ff scheduler/SchI.v
+ff scheduler/SchA.v 
+ff scheduler/SchA.v 
+ff scheduler/SchI.v
+ff scheduler/SchA.v
+cd ~/.emacs.d/
+l
+ff custom.el
+ff theme.el 
+ff package.el 
+git reset --hard HEAD
+git pull origin main
+ff package.el 
 ls
 cd Desktop/
 l
-cd writing/CRIS-doc/l
-cd writing/
+cd study/CRIS-examples/l
+cd study/
 l
-cd CRIS-doc/
+cd CRISM/
 l
-ff 4theories.tex 
+git status
+ff configure 
 ls
-cd ../..
+cd ..
 l
-cd study/CRIS/CRIS-dev/
+cd promising-vm/
+l
+git pull origin main
+git branch
+git reset --hard HEAD
+git pull origin main
+git reset --hard HEAD
+git log
+git pull origin main
 ls
-ff .
+cd ..
+l
+cd CRISM/
+l
+git status
+ls
+cd ..
+l
+ff configure 
+ff ~/.emacs.d/init.el 
+ff Makefile
+ff Makefile
+ff theories/semantics/Execution.v
+ssh lab
+ls
+cd ..
+l
+cd ..
+l
+cd CompCertM
+l
+git pull
+git checkout v3.9_without_opam_coq820_system_extended 
 ls
 ls
 git add .
@@ -126,3 +181,38 @@ ff paper.tex
 ls
 cd ~/Desktop/study/CRIS
 ls
+ff Desktop/study/CRISM/CompCertM/
+ls
+cd Desktop/study/CRISM
+l
+git branch
+cd CompCertM
+l
+git branch
+git checkout v3.9_without_opam_coq820_modified_extcall
+git checkout master
+git checkout main
+git status
+git reset --hard HEAD
+git checkout v3.9_without_opam_coq820_modified_extcall
+cd ..
+l
+ls
+cd Desktop/study/
+l
+cd CRIS
+l
+git status
+ls
+cd ..
+l
+cd CRISM
+l
+cd Compk
+ff ~/.emacs.d/init.el 
+lls
+cd ..
+l
+ff common/EventsC.v 
+ls
+ff common/EventsC.v

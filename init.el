@@ -15,6 +15,11 @@
 
 ;; line number
 (global-display-line-numbers-mode 1)
+(dolist (hook '(eshell-mode-hook
+                term-mode-hook
+                shell-mode-hook
+                compilation-mode-hook))
+  (add-hook hook (lambda () (display-line-numbers-mode 0))))
 
 ;; tab width
 (setq-default tab-width 2)
@@ -70,4 +75,4 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; default Latin font (e.g. Consolas)
-(set-face-attribute 'default nil :family "DejaVu Sans Mono" :height 100)
+(set-face-attribute 'default nil :family "DejaVu Sans Mono" :height 120)
