@@ -15,7 +15,7 @@
 (defun split-window-and-run-shell (shell-type)
   (let ((width (window-width))
         (height (window-height)))
-    (if (> (+ 50 height) width)
+    (if (> (+ 100 height) width)
         (split-window-vertically)
       (split-window-horizontally))
     (other-window 1)

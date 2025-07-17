@@ -24,7 +24,7 @@
 ;; (setq coq-prog-name "/Users/sang/.opam/ccr/bin/coqtop")
 ;; (setq coq-prog-name "/Users/sang/.opam/default/bin/coqtop")
 ;; (setq coq-prog-name "/Users/sang/.opam/iris-tutorial/bin/coqtop")
-(setq coq-prog-name "/Users/sang/.opam/xorlist/bin/coqtop")
+(setq coq-prog-name cris)
 
 (global-set-key [?\s-l] 'maths-menu-insert-lambda)
 (global-set-key [?\s-l] 'maths-menu-insert-lambda)
@@ -51,7 +51,6 @@
 (use-package auctex :ensure t)
 (setq TeX-auto-save t)
 (setq TeX-parse-self t)
-(setq-default TeX-master nil)
 
 (use-package tex :ensure auctex)
 ;; for macOS
@@ -106,3 +105,20 @@
   :ensure t
   :mode ("README\\.md\\'" . gfm-mode)
   :init (setq markdown-command "multimarkdown"))
+
+;; projectile
+(use-package projectile
+	:ensure t
+	:diminish projectile-mode
+	:init
+	;; turn oon projectile globally:
+	(projectile-mode +1)
+	;; choose a prefix on "C-c p" or via the global-map:
+	(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+	:config
+	;; search your favorite project folder
+	(setq projectile-completion-system 'auto)
+	;; optionally cache projects for speed
+	(setq projectile-enable-caching t)
+	;; file-watching method (auto, native, etc.)
+	(setq projectile-indexing-method 'alien))

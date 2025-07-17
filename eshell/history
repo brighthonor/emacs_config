@@ -1,94 +1,4 @@
 l
-cd definition/
-l
-ff ImpProofs.v 
-cd ..
-l
-cd definition/
-l
-cd ..
-l
-cd compiler_extract/
-l
-cd ..
-l
-cd ../mem/
-l
-ff Mem01proof.v 
-cd ..
-l
-grep -rn "Ltac ur"
-grep -rn "Ltac ur :="
-grep -rn "Ltac ur"
-grep -rn "Ltac ur"
-grep -rn "ur"
-l
-cd lib
-grep -rn "ur"
-l
-ff Red.v
-cd ..
-l
-cd ems/
-l
-ff IRed.v 
-cd ..
-l
-grep -rn --include "*.v" "ur"
-cd mem
-ff Mem1.v 
-ll
-cd ..
-l
-cd ..
-l
-cd vc
-l
-cd ..
-l
-cd vc
-l
-ff Preface.v
-ff Preface.v
-ls
-cd .emacs.d/
-l
-ff theme.el 
-l
-cd .emacs.d/
-l
-ff init.el 
-l
-ls
-cd Desktop/
-l
-cd writing/
-l
-cd CRIS-dec
-cd CRIS-doc/
-l
-cd ..
-mkdir test
-l
-cd test
-l
-ff test.tex 
-l
-cd Desktop/writing/
-ls
-cd CRIS-doc/
-l
-ff paper.tex
-ff paper.tex
-ls
-git pull origin CRIS-doc
-git pull origin master
-git status
-rm #acmart.cls#
-l
-ff acmart.cls
-ls
-l
 rm -rf #acmart.cls#
 ls
 git status
@@ -125,4 +35,94 @@ l
 cd study/CRIS/CRIS-dev/
 ls
 ff .
+ls
+ls
+git add .
+git status
+git reset HEAD .
+git add .
+git status
+git rm --cached *
+git rm --cached
+git rm --cached .
+git rm --cached -r .
+git add .
+git commit -m "sum up the config files"
+git push origin master
+git push origin main
+ls
+ff MaincbA.v 
+ls
+cd ~
+l
+cd Desktop/
+l
+cd writing/
+l
+cd CRIS-dec
+cd CRIS-doc/
+ls
+git pull origin master
+git reset --hard HEAD
+git pull origin master
+ff 1intro.tex 
+git reset --hard HEAD
+ff 1intro.tex 
+ls
+cd ..
+l
+cd ..
+l
+ls
+cd study/u
+l
+cd study/
+l
+cd CRIS
+l
+cd CRIS-dev/
+l
+cd scheduler/
+l
+ff SchA.v 
+ff SchIAproof.v 
+ls
+cd ..
+l
+git pull origin merge-pmod-smod-sch
+ls
+ff SchIAproof.v 
+cd ..
+l
+make -j
+ls
+cd ..
+l
+ag SchI.v
+find SchI.v
+find -r SchI.v
+find --help
+ls
+cd ..
+l
+cd ~/Desktop/writing/
+l
+rm -rf popl26-cris-artifact/
+rm -rf __MACOSX/
+ls
+git clone https://github.com/snu-sf/coco-doc.git
+git clone https://github.com/snu-sf/coco_paper.git	
+ls
+cd coco_paper/
+l
+cd v4
+l
+ff paper.tex
+cd ../..
+l
+cd CRIS-doc
+l
+ff paper.tex
+ls
+cd ~/Desktop/study/CRIS
 ls
