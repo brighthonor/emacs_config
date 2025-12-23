@@ -75,4 +75,20 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; default Latin font (e.g. Consolas)
-(set-face-attribute 'default nil :family "DejaVu Sans Mono" :height 120)
+(set-face-attribute 'default nil :family "DejaVu Sans Mono" :height 140)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Beeping
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+; Source - https://stackoverflow.com/a
+; Posted by makim
+; Retrieved 2025-12-08, License - CC BY-SA 3.0
+
+(setq ring-bell-function 'ignore)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Base shell set up
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(setq shell-file-name "/bin/zsh")

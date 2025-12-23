@@ -24,7 +24,8 @@
 (use-package company-coq :ensure t
   :config
   (add-hook 'coq-mode-hook #'company-coq-mode))
-(setq coq-prog-name "/Users/sang/.opam/cm/bin/coqtop")
+(setq coq-prog-name "opam exec -- coqtop")
+
 
 (global-set-key [?\s-l] 'maths-menu-insert-lambda)
 (global-set-key [?\s-l] 'maths-menu-insert-lambda)
@@ -44,8 +45,24 @@
 (global-set-key [?\s-3] 'proof-three-window-toggle)
 
 ;; Tuareg for OCaml
-(use-package tuareg :ensure t)
-(add-to-list 'exec-path "/Users/sang/.opam/default/bin")
+(use-package tuareg
+	:ensure t
+	:mode (("\\.ml\\'" . tuareg-mode)
+         ("\\.mli\\'" . tuareg-mode)
+				 ("\\.mll\\'" . tuareg-mode)
+				 ("\\.mly\\'" . tuareg-mode)
+         ("\\.ocamlinit\\'" . tuareg-mode))
+  :hook ((tuareg-mode . electric-indent-mode))
+  :config
+  (setq compilation-read-command nil)
+  (setq compile-command "dune build")
+	(setq ocaml-config-file "~/.emacs.d/lang/ocaml.el")
+	(load ocaml-config-file))
+
+;; Config for Rust
+(setq rust-config-file "~/.emacs.d/lang/rust.el")
+(load rust-config-file)
+
 
 ;; AucTeX
 (use-package auctex :ensure t)
@@ -130,3 +147,10 @@
   :config
   (setq magit-display-buffer-function #'magit-display-buffer-fullframe-status-v1)
 	(global-set-key (kbd "C-x g") 'magit-status))
+
+;; envrc with direnv (you need to install direnv in your OS)
+(use-package envrc
+  :ensure t
+  :config
+  (envrc-global-mode)
+	(add-hook 'projectile-after-switch-project-hook #'envrc-reload))

@@ -4,3 +4,14 @@ eln-cache/
 # emacs backup / auto-save files
 *~
 #*#
+
+# eshell histories
+
+eshell/history
+eshell/lastdir
+
+# url cookies
+url/cookies
+
+# projectile bookmarks
+projectile-bookmarks.eld

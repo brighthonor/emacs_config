@@ -13,4 +13,9 @@
 (use-package leuven-theme
 	:ensure t)
 
+;; I failed to write configuration for this
+;; However I could install it manually
+(use-package nordic-night-theme
+	:ensure t)
+
 (load-theme 'leuven t)
